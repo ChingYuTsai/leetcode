@@ -2,6 +2,13 @@ import java.util.Arrays;
 
 public class SingleNumber_136 {
     public static int singleNumber(int[] nums) {
+        int sn = 0;
+        for(int i = 0; i < nums.length; i++)
+            sn ^= nums[i];
+        return sn;
+    }
+
+    public static int mySolution(int[] nums) {
         Arrays.sort(nums);
         for(int i = 0; i < nums.length; i=i+2){
             if(i == nums.length-1)

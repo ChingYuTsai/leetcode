@@ -1,7 +1,7 @@
 import java.util.Arrays;
 
 public class NRepeated_961 {
-    public static int repeatedNTimes(int[] A) {
+    public static int mySolution(int[] A) {
         int result=0;
         int n = A.length/2;
         Arrays.sort(A);
@@ -12,7 +12,7 @@ public class NRepeated_961 {
         return result;
     }
 
-    public static int repeatedNTimes1(int[] A) {
+    public static int repeatedNTimes(int[] A) {
         int i = (int) (Math.random() * A.length);
         int j = (int) (Math.random() * A.length);
 
